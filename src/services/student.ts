@@ -7,9 +7,10 @@ import {
   deleteStudent,
 } from "../models/student";
 
-export const findAll = async () => {
-  return await findAllStudents();
+export const findAll = async (limit: number, offset: number) => {
+  return await findAllStudents(limit, offset);
 };
+
 export const insert = async (student: Student) => {
   return await insertStudent(student);
 };
