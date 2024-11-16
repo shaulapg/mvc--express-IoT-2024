@@ -1,4 +1,4 @@
-export interface Professor {
+export interface Teacher {
   id?: number;
   first_name: string;
   last_name: string;
@@ -6,10 +6,10 @@ export interface Professor {
   phone?: string;
   department: string;
 }
-export interface PaginatedProfessor {
+export interface PaginatedTeacher {
   page: number;
   limit: number;
   total: number;
   totalPages: number;
-  data: Professor[];
+  data: Teacher[];
 }

@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const professorSchema = z.object({
+export const teacherSchema = z.object({
   first_name: z
     .string()
     .min(2, { message: "El nombre debe tener al menos 2 caracteres" }),
